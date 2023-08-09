@@ -1,0 +1,1902 @@
+
+:root{
+    --primary: #ff9900;
+    --newcolor: #330000;
+    --light: #F0F0F0;
+    --danger: #FE4545;
+    --pure: #FFFFFF;
+    --whitetype: #f5f3f3e1;
+    --heading: rgb(53, 52, 47);
+    --blue: rgba(6, 17, 75, 0.884);
+    --para: rgb(36, 35, 33);
+    --ternary: #898989;
+    --secondary: #070606;
+    --hanif: #0A113D;
+    --ternaryz: #c3cace54;
+}
+@font-face{
+    font-family: 'Merienda-Bold';
+    src: url(../fonts/Merienda-Bold.ttf);
+}
+
+@font-face{
+    font-family: 'Merienda-regular';
+    src: url(../fonts/Merienda-Regular.ttf);
+}
+
+@font-face{
+    font-family: "poppins-regular";
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+@font-face{
+    font-family: "poppins-medium";
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+
+@font-face{
+    font-family: "poppins-bold";
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+
+@font-face{
+    font-family: "poppins-semibold";
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face{
+    font-family: "poppins-black";
+    src: url(../fonts/Poppins-Black.ttf);
+}
+
+@font-face{
+    font-family: "Pacifico-Regular";
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face{
+    font-family: "roboto-black";
+    src: url(../Roboto/Roboto-Black.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+    font-family: "poppins-regular";
+    color: var(--whitetype);
+    overflow-x: hidden;
+}
+
+
+
+
+
+/*----utility store start----*/
+.flex{
+    display: flex;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.item-center{
+    align-items: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+.flex-direction-row{
+    flex-direction: row;
+}
+
+.section-heading{
+    text-transform: capitalize;
+    color: var(--whitetype);
+    font-family: 'poppins-medium';
+    font-weight: 200;
+    font-size: 2.20rem;
+    letter-spacing: 1.50px;
+    text-align: center;
+}
+
+.underline{
+    width: 100px;
+    height: 5px;
+    border: 1px solid darkred;
+    border-radius: 100%;
+    margin: 0 auto;
+    background: red;
+    margin-bottom: 1.10rem;
+}
+
+.liner{
+    width: 100%;
+    height: 3px;
+    background: var(--pure);
+    opacity: 0.1;
+}
+
+.section-heading span{
+    color: var(--primary);
+}
+
+.heading-paragraph{
+    font-family: 'poppins-regular';
+    color: var(--whitetype);
+    font-size: 1.40rem;
+    text-align: center;
+    margin-bottom: 1.10rem;
+    line-height: 1.40;
+}
+
+.text-paragraph{
+    font-family: 'poppins-regular';
+    font-weight: 200;
+    color: var(--ternary);
+    font-size: 1.05rem;
+    line-height: 1.40;
+    text-align: justify;
+}
+section.about-us,
+section.our-services{
+    margin: 4rem 0;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.hor{
+    width: 40%;
+    height: 1px;
+    background-color: var(--heading);
+    margin-bottom: 1rem;
+}
+/*----utility store start----*/
+
+
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.top-bar{
+    background-color: var(--newcolor);
+    width: 100%;
+    padding: 1rem 0
+}
+
+.top-bar .wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.top-bar .wrapper .box-a a,
+.top-bar .wrapper .box-b a{
+    color: var(--pure);
+    text-decoration: none;
+    font-family: 'raleway-bold';
+    letter-spacing: 4;
+    word-spacing: 2;
+}
+
+.top-bar .wrapper .box-a a span,
+.top-bar .wrapper .box-b a span{
+    font-family: 'raleway-bold';
+    font-weight: 800;
+    margin-left: 0.95rem;
+    margin-right: 0.10rem;
+}
+
+.top-bar .wrapper .box-a .fa-clock,
+.top-bar .wrapper .box-a .fa-facebook-f,
+.top-bar .wrapper .box-a .fa-linkedin-in,
+.top-bar .wrapper .box-a .fa-twitter,
+.top-bar .wrapper .box-a .fa-instagram,
+.top-bar .wrapper .box-b .fa-envelope,
+.top-bar .wrapper .box-b .fa-phone-alt{
+    color: var(--pure);
+    font-size: 1.10rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.top-bar .wrapper .box-a .fa-facebook-f:hover,
+.top-bar .wrapper .box-a .fa-linkedin-in:hover,
+.top-bar .wrapper .box-a .fa-twitter:hover,
+.top-bar .wrapper .box-a .fa-instagram:hover{
+    color: var(--primary);
+    transform: translateY(-4px);
+}
+
+
+
+
+
+
+header{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(
+        rgba(10, 8, 43, 0.7),
+        rgba(37, 17, 151, 0.7));
+        padding: 3rem 0;
+}
+.video-bck{
+    position: absolute;
+    background-position: 100% 100%;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+header nav{
+    width: 90%;
+    margin: 0 auto;
+}
+header nav .logo{
+    margin-right: 2rem;
+}
+header nav .logo a img{
+    width: 200px;
+    cursor: pointer;
+}
+
+header nav .links {
+    position: relative;
+}
+
+header nav .links a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'poppins-medium';
+    color: var(--pure);
+    border: 1px solid transparent;
+    margin-right: 0.60rem;
+    padding: 0.60rem 1.10rem;
+    background: transparent;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+header nav .links .active{
+    background-color: var(--primary);
+    color: black;
+}
+
+header nav .links .active:hover{
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+header nav .links a:hover{
+    background: var(--primary);
+    color: var(--secondary);
+}
+
+header nav .consult{
+    border: 2px solid transparent;
+    color: var(--secondary);
+    background: var(--primary);
+    padding: 0.70rem 1.60rem;
+    font-family: 'poppins-medium';
+    text-transform: uppercase;
+    border-radius: 7px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+header nav .consult a{
+    text-decoration: none;
+    color: var(--secondary);
+    font-family: 'poppins-medium';
+}
+
+header nav .consult a:hover{
+    color: var(--primary);
+
+}
+
+header nav .consult:hover{
+    transform: translateY(7px);
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+}
+
+header .header-text{
+    text-align: center;
+    position: relative;
+    margin-top: 6rem;
+}
+.fba{
+    display: none;
+}
+
+header .header-text h1{
+    font-size: 5rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-weight: 200;
+    font-family: 'poppins-medium';
+}
+
+header .header-text .consult-img{
+    position: absolute;
+    top: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .header-text .consult-img img{
+    height: 150px;
+}
+
+header .header-text h3{
+    font-size: 1.30rem;
+    font-weight: 200;
+    margin-top: 2rem;
+    text-transform: capitalize;
+    font-family: 'poppins-regular';
+    letter-spacing: 2px;
+}
+
+header .header-text h3:nth-last-child(1){
+    margin-top: 13rem;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+section.about-us{
+    background-color: var(--pure);
+    padding: 4rem 0;
+}
+section.about-us .box-a img{
+    width: 600px;
+    object-fit: contain;
+}
+section.about-us .wrapper{
+    margin-top: 2rem;
+}
+section.about-us .box-b{
+    margin-left: 3rem;
+}
+
+section.about-us .section-heading,
+section.about-us .box-b p,
+section.about-us  .heading-paragraph{
+    color: var(--secondary);
+}
+
+
+
+
+
+
+
+section.our-services{
+    margin: 0;
+    padding: 4rem 0rem;
+    background: var(--hanif);
+}
+section.our-services .text-paragraph{
+    text-align: center;
+}
+section.our-services .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 3rem;
+}
+section.our-services .card-wrapper .card{
+    padding-top: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 400px;
+    background: #0c002b;
+    margin: 30px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all .6s ease;
+}
+
+section.our-services .card-wrapper .card:hover{
+    transform: translateY(-20px);
+}
+section.our-services .card-wrapper:hover .card{
+    opacity: 0.8;
+}
+section.our-services .card-wrapper .card:hover{
+    opacity: 1;
+}
+section.our-services .card-wrapper .card::before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+section.our-services .card-wrapper .card .content{
+    padding: 30px;
+    text-align: center;
+}
+section.our-services .card-wrapper .card .content h2{
+    position: absolute;
+    top: 62px;
+    right: 30px;
+    font-size: 4em;font-weight: 800;
+    color: var(--primary);
+    z-index: 1;
+    opacity: 0.1;
+    transition: 0.5s;
+}
+section.our-services .card-wrapper .card:hover .content h2{
+    opacity: 1;
+    transform: translateY(-70px);
+}
+section.our-services .card-wrapper .card .content h3{
+    position: relative;
+    font-size: 1.5em;
+    color: var(--pure);
+    text-transform: capitalize;
+    z-index: 2;
+    opacity: 0.5;
+    letter-spacing: 1.60px;
+    transition: 0.5s;
+}
+section.our-services .card-wrapper .card .content p{
+    position: relative;
+    font-size: 1em;
+    font-weight: 300;
+    color: var(--pure);
+    z-index: 2;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    padding: 1.50rem 0;
+    transition: 0.5s;
+}
+section.our-services .card-wrapper .card:hover .content p,
+section.our-services .card-wrapper .card:hover .content h3{
+    opacity: 1;
+}
+section.our-services .card-wrapper .card .content a{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: var(--primary);
+    border: 2px solid var(--secondary);
+    border-radius: 7px;
+    color: #0c002b;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .4s ease;
+}
+section.our-services .card-wrapper .card .content a:hover{
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+
+
+
+section.our-services .card-wrapper .card span{
+    transition: all .3s ease;
+    opacity: 0;
+}
+section.our-services .card-wrapper .card:hover span{
+    opacity: 1;
+}
+section.our-services .card-wrapper .card span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, #ff9900);
+    animation: animate1 2s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+section.our-services .card-wrapper .card span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #ff9900);
+    animation: animate2 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate2{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(100%);
+    }
+}
+section.our-services .card-wrapper .card span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to left, transparent, #ff9900);
+    animation: animate3 2s linear infinite;
+}
+@keyframes animate3{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+section.our-services .card-wrapper .card span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #ff9900);
+    animation: animate4 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes animate4{
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+
+
+
+
+
+section.Team4Amz{
+    padding: 4rem 0;
+    background-color: var(--pure);
+}
+
+section.Team4Amz .section-heading{
+    color: var(--secondary);
+    font-family: 'poppins-medium';
+}
+section.Team4Amz .wrapper{
+    width: 100%;
+    margin-top: 3rem;
+}
+section.Team4Amz .wrapper .card-one{    
+    width: 50%;
+    height: 350px;
+    text-align: justify;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    color: var(--secondary);
+    overflow-y: auto;
+}
+section.Team4Amz .wrapper .video-card{
+    width: auto;
+}
+section.Team4Amz .wrapper .video-card iframe{
+    width: 600px;
+    height: 330px;
+}
+
+
+
+
+section.working{
+    padding: 4rem 0;
+    background: var(--hanif);
+}
+section.working .container p{
+    word-spacing: 1.15px;
+    letter-spacing: 1.20px;
+    text-align: justify;
+    margin-top: 2rem;
+    color: var(--ternary);
+    font-family: 'poppins-regular';
+}
+section.working .container .undo{
+    position: relative;
+    margin-top: 2rem;
+    color: var(--secondary);
+    background: var(--primary);
+    padding: 0.50rem 0.60rem;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+section.working .container .undo .underline{
+    position: absolute;
+    top: 28px;
+    left: 97px;
+    right: 146px;
+}
+
+
+
+
+
+section.our-deal{
+    padding: 4rem 0;
+    background: linear-gradient(
+        rgba(106, 116, 133, 0.8),
+        rgba(35, 43, 56, 0.8)), 
+        url(../images/128515.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+section.our-deal .section-heading{
+    color: var(--secondary);
+}
+section.our-deal .full-section{
+    margin-top: 3rem;
+}
+
+section.our-deal .container{
+    padding: 5rem 3rem;
+}
+
+section.our-deal .wrapper .box{
+    text-align: center;
+    color: var(--pure);
+    font-family: 'poppins-medium';
+}
+
+section.our-deal .wrapper .box h1{
+    font-size: 4rem;
+    font-weight: 200;
+}
+
+section.our-deal .wrapper .box h3{
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+section.case,
+section.case-studies-link{
+    padding: 4rem 0;
+    background: var(--hanif);
+}
+
+section.case .section-heading{
+    color: var(--light);
+}
+
+section.case .container .text-paragraph{
+    text-align: center;
+    margin-bottom: 4rem;
+    color: var(--ternary);
+    font-weight: 200;
+    font-family: 'poppins-regular';
+    text-transform: capitalize;
+}
+section.case .owl-carousel .item .image img{
+    width: 300px;
+    height: 200px;
+    border-radius: 9px;
+    border: 1px solid var(--primary);
+}
+/*----case one studies links start----*/
+
+section.case-studies-link{
+    padding: 4rem 0;
+}
+section.case-studies-link .case-three .image img{
+    height: 700px;
+    width: 500px;
+    border: 3px solid var(--primary);
+    border-radius: 9px;
+}
+section.case-studies-link .case-one .image img,
+section.case-studies-link .case-two  .image img{
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--primary);
+    border-radius: 9px;
+}
+section.case-studies-link .case-one,
+section.case-studies-link .case-two,
+section.case-studies-link .case-three{
+    margin-bottom: 6rem;
+}
+section.case-studies-link .case-one .pera,
+section.case-studies-link .case-two .pera,
+section.case-studies-link .case-three .pera{
+    color: var(--secondary);
+    width: 100%;
+    margin: 0 auto;
+    background: var(--light);
+    padding: 1.50rem 2rem;
+    line-height: 1.60;
+    word-spacing: 1.11px;
+    letter-spacing: 1.20px;
+    border-radius: 5px;
+    margin-bottom: 1rem
+}
+/*----case one studies links end----*/
+
+
+/*----case two studies links start----*/
+section.case-studies-link .wrapper .wrap p{
+    line-height: 1.60;
+    word-spacing: 1.11px;
+    letter-spacing: 1.20px;
+    text-align: justify;
+}
+section.case-studies-link .wrapper .wrap .image{
+    margin-bottom: 2rem;
+}
+section.case-studies-link .wrapper .wrap .image img{
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--primary);
+    border-radius: 9px;
+}
+/*----case two studies links end----*/
+
+
+
+
+
+
+section.clients{
+    margin-bottom: 3rem;
+    background-color: var(--pure);
+    padding: 4rem 0;
+}
+section.clients .section-heading{
+    color: var(--secondary);
+}
+section.clients .owl-carousel,
+section.clients{
+    margin-top: 4rem;
+}
+section.clients .owl-carousel .item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 800px;
+    margin: 0 auto;
+}
+
+section.clients .owl-carousel .item .image{
+    margin: 0 auto;
+}
+section.clients .owl-carousel .item .image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+section.clients .owl-carousel .item .name,
+section.clients .owl-carousel .item .comp-name{
+    letter-spacing: 2px;
+}
+
+section.clients .owl-carousel .item p{
+    letter-spacing: 1.70px;
+    margin-top: 2rem;
+    margin-bottom: 1.70rem;
+    text-align: justify;
+    color: var(--secondary);
+    line-height: 2;
+}
+
+section.clients .owl-carousel .item .name,
+section.clients .owl-carousel .item .comp-name{
+    color: var(--secondary);
+}
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    background: var(--hanif);
+    padding: 3rem 0;
+}
+
+footer .wrapper .card-one a img{
+    width: 200px;
+}
+
+footer .container .card-one h3,
+footer .container .card-two h3,
+footer .container .card-three h3{
+    color: var(--primary);
+    font-size: 2rem;
+    font-family: 'poppins-bold';
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+footer .container .card-one p,
+footer .container .card-two p,
+footer .container .card-three p{
+    color: var(--ternary);
+    line-height: 2;
+    letter-spacing: 1.50px;
+}
+
+footer .container .card-one,
+footer .container .card-two,
+footer .container .card-three{
+    width: 28%;
+}
+
+footer .container .card-two .links a{
+    text-decoration: none;
+    color: var(--whitetype);
+    margin-bottom: 0.70rem;
+    letter-spacing: 1.50px;
+    transition: all .4s ease;
+    color: var(--ternary);
+}
+
+footer .container .card-two .links a:hover{
+    color: var(--pure);
+    transform: translateX(10px);
+}
+
+footer .container .card-three p{
+    text-transform: capitalize;
+}
+
+footer .container .card-three input,
+footer .container .card-three textarea{
+    width: 300px;
+    outline: none;
+    padding: 0.50rem;
+    color: var(--secondary);
+    letter-spacing: 1.50px;
+    border: none;
+    background: var(--whitetype);
+    border-radius: 4px;
+}
+
+footer .container .card-three input{
+    margin-bottom: 0.70rem;
+}
+
+footer .container .card-three .inputs a{
+    text-decoration: none;
+    color: var(--secondary);
+    width: 190px;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0.70rem 1rem;
+    background-color: var(--primary);
+    border-radius: 30px;
+    border: 2px solid transparent;
+    text-transform: capitalize;
+    font-family: 'poppins-bold';
+    transition: all .4s ease;
+}
+
+footer .container .card-three .inputs a:hover{
+    transform: translateY(4px);
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+}
+
+
+
+.footer{
+    background: var(--secondary);
+    padding: 1.50rem 0;
+}
+.footer .footer-txt span{
+    color: var(--primary);
+}
+.footer .social .fa-facebook-f,
+.footer .social .fa-linkedin-in,
+.footer .social .fa-twitter,
+.footer .social .fa-instagram{
+    color: var(--pure);
+    margin-left: 1rem;
+    transition: all .4s ease;
+    font-size: 1.20rem;
+}
+.footer .social .fa-facebook-f:hover,
+.footer .social .fa-linkedin-in:hover,
+.footer .social .fa-twitter:hover,
+.footer .social .fa-instagram:hover{
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+
+
+
+
+/*full portfolio,  product reasearch, Amazon Advertising ppc, contact-us, links start*/
+#full-header{
+    height: 60vh;
+    background: var(--hanif);
+}
+header .product-text{
+    text-align: center;
+    position: relative;
+    
+}
+header .product-text h1{
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-weight: 200;
+    font-family: 'poppins-medium';
+    margin-top: 4rem;
+}
+header .product-text .red-line{
+    width: 400px;
+    height: 12px;
+    position: relative;
+    top: -10px;
+    border: 2px solid var(--secondary);
+    border-radius: 50%;
+    background-color: red;
+    margin: 0 auto;
+}
+section.product-link .video,
+section.amazon-ppc-link .video,
+section.listing-link .video,
+section.launching-link .video{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+section.product-link .video iframe,
+section.amazon-ppc-link .video iframe,
+section.listing-link .video iframe,
+section.launching-link .video iframe{
+    border: 6px solid var(--primary);
+    border-radius: 9px;
+    width: 60%;
+    height: 405px;
+    object-fit: cover;
+}
+section.product-link .section-heading,
+section.amazon-ppc-link .section-heading,
+section.listing-link .section-heading,
+section.launching-link .section-heading,
+section.product-sourcing-link .section-heading,
+section.account-management-link .section-heading,
+section.product-link .section-heading span,
+section.amazon-ppc-link .section-heading span,
+section.listing-link .section-heading span,
+section.launching-link .section-heading span,
+section.product-sourcing-link .section-heading span,
+section.account-management-link .section-heading span{
+    color: var(--secondary);
+    text-align: left;
+}
+section.product-link,
+section.amazon-ppc-link,
+section.listing-link,
+section.launching-link,
+section.product-sourcing-link,
+section.account-management-link,
+section#back-services,
+section.product-link,
+section.about-link,
+section.contact-link,
+section.portfolio-link,
+section.case-studies-link{
+    padding: 3rem 0;
+    background-color: var(--pure);
+    border-top: 1px solid var(--ternary);
+}
+section.product-link .box-two h2,
+section.product-link .box-three h2,
+section.amazon-ppc-link .velo h2,
+section.listing-link .velo h2,
+section.product-sourcing-link .velo h2,
+section.account-management-link .velo h2{
+    margin-top: 4rem;
+    text-transform: capitalize;
+    position: relative;
+    letter-spacing: 1.50px;
+    color: var(--secondary)
+}
+section.product-link .box-one p,
+section.product-link .box-two p,
+section.product-link .box-three p,
+section.amazon-ppc-link p,
+section.amazon-ppc-link .velo p,
+section.listing-link .velo p,
+section.launching-link .container p,
+section.product-sourcing-link p,
+section.account-management-link p,
+section.case-studies-link .wrap p,
+section.portfolio-link .cases p,
+section.portfolio-link .wrap p{
+    line-height: 2;
+    word-spacing: 1.15px;
+    letter-spacing: 1.20px;
+    text-align: justify;
+    color: var(--secondary);
+}
+section.product-link .box-two,
+section.product-link .box-three,
+section.amazon-ppc-link .velo,
+section.listing-link .velo,
+section.product-sourcing-link .velo,
+section.account-management-link .velo{
+    position: relative;
+}
+section.amazon-ppc-link .velo .imgz img,
+section.amazon-ppc-link .velo .imgzz img{
+    width: 550px;
+    height: 300px;
+}
+section.amazon-ppc-link .velo .imgz{
+    margin-left: 2rem;
+    object-fit: cover;
+}
+section.amazon-ppc-link .velo .imgzz{
+    margin-left: 2rem;
+}
+#velo-color{
+    background-color: var(--ternaryz);
+    margin: 2rem 0;
+    padding: 0 2rem;
+}
+.account-management-link .container,
+.amazon-ppc-link .container{
+    position: relative;
+}
+.heading-linee{
+    width: 100px;
+    height: 5px;
+    border: 1px solid darkred;
+    border-radius: 100%;
+    background: var(--primary);
+    position: absolute;
+    top: 504px;
+    left: 13px;
+}
+.heading-line{
+    width: 100px;
+    height: 5px;
+    border: 1px solid darkred;
+    border-radius: 100%;
+    background: var(--primary);
+    position: absolute;
+    top: 38px;
+    left: 12px;
+}
+.tor-line{
+    width: 100px;
+    height: 5px;
+    border: 1px solid darkred;
+    border-radius: 100%;
+    background: var(--primary);
+    position: absolute;
+    top: 37px;
+    left: 0;
+}
+.tor-lines{
+    width: 100px;
+    height: 5px;
+    border: 1px solid darkred;
+    border-radius: 100%;
+    background: var(--primary);
+    position: absolute;
+    top: 228px;
+    left: 0;
+}
+section.contact-link .wrapper{
+    margin-top: 3rem;
+
+}
+section.contact-link .wrapper .wrap{
+    color: var(--secondary);
+}
+section.contact-link .wrapper .wrap img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+section.contact-link .wrapper .wrap .fa-map-marker-alt,
+section.contact-link .wrapper .wrap .fa-envelope,
+section.contact-link .wrapper .wrap .fa-phone-alt{
+    font-size: 1.40rem;
+    background-color: var(--primary);
+    padding: 1rem;
+    border-radius: 50%;
+    margin-right: 1.10rem;
+}
+section.contact-link .wrapper .wrap .one .name .nam{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.10rem;
+    margin-bottom: 0.40rem;
+    letter-spacing: 1.60px;
+}
+section.contact-link .wrapper .wrap .one .name .graph{
+    color: var(--ternary);
+}
+section.contact-link .wrapper .wrap .one{
+    margin-bottom: 2.30rem;
+}
+section.contact-link .wrapper .wrap .second input{
+    padding: 0.70rem 0.20rem;
+    width: 280px;
+    outline: none;
+    border: 1px solid var(--ternary);
+    border-left: 4px solid var(--primary);
+    color: var(--ternary);
+    background-color: var(--whitetype);
+}
+section.contact-link .wrapper .wrap .third input{
+    padding: 0.70rem 0.20rem;
+    width: 590px;
+    outline: none;
+    border: 1px solid var(--ternary);
+    border-left: 4px solid var(--primary);
+    color: var(--ternary);
+    background-color: var(--whitetype);
+    border-radius: 5px;
+}
+section.contact-link .wrapper .wrap .third textarea{
+    padding: 0.70rem 0.20rem;
+    width: 590px;
+    height: 150px;
+    outline: none;
+    border: 1px solid var(--ternary);
+    border-left: 4px solid var(--primary);
+    color: var(--ternary);
+    background-color: var(--whitetype);
+    border-radius: 5px;
+}
+section.contact-link .wrapper .wrap .second{
+    margin-bottom: 1rem;
+}
+section.contact-link .wrapper .wrap .second input:nth-child(2){
+    margin-right: 1.60rem;
+}
+section.contact-link .wrapper .wrap button{
+    margin-top: 1.50rem;
+    padding: 0.60rem 1.80rem;
+    outline: none;
+    border: none;
+    background-color: var(--primary);
+    border-radius: 5px;
+}
+section.portfolio-link .case-one,
+section.portfolio-link .case-two,
+section.portfolio-link .wrapper .wrap .image{
+    margin-bottom: 3rem;
+}
+section.portfolio-link .case-one .image img,
+section.portfolio-link .case-two  .image img{
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--primary);
+    border-radius: 9px;
+}
+section.portfolio-link .case-three .image img{
+    height: 700px;
+    width: 500px;
+    border: 3px solid var(--primary);
+    border-radius: 9px;
+}
+section.portfolio-link .wrapper{
+    margin-top: 5rem;
+}
+section.portfolio-link .wrapper .wrap .image img{
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--primary);
+    border-radius: 9px;
+}
+section.portfolio-link .ppc{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+/*full portfolio, product reasearch, Amazon Advertising ppc, contact-us, links end*/
+
+
+
+
+
+/*media qure for Navigation-Bar start*/
+
+.site-main-wrapper{
+    position: relative;
+}
+.hamberger{
+    position: fixed;
+    top: 15px;
+    left: 10px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+.times{
+    position: fixed;
+    top: 15px;
+    left: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+.hamberger img,
+.times img{
+    width: 25px;
+    background-color: var(--ternary);
+    padding: 4px;
+    border-radius: 5px;
+    border: 2px solid var(--pure);
+}
+.mobile-logo{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.mobile-logo img{
+    width: 170px;
+}
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem;
+    padding-top: 2rem;
+    z-index: 1001;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(50, 44, 133, 0.9),
+        rgba(32, 32, 31, 0.9)), 
+        url(../images/128515.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-attachment: fixed;
+    transform: translateX(-100%);
+    transition: all .5s ease-in-out;
+    overflow-y: auto;
+}
+.open{
+    transform: translateX(0);
+}
+.mobile-nav ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+.mobile-nav ul li{
+    margin-bottom: .21rem;
+}
+.mobile-nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--pure);
+    font-size: 1.10rem;
+    letter-spacing: 1.40px;
+    font-family: 'poppins-regular';
+    transition: all .4s ease;
+}
+.mobile-nav ul li a:hover{
+    color: var(--primary);
+}
+.mobile-nav .contact-btn a{
+    padding: 0.8rem 2rem;
+    margin-top: 2rem;
+    font-size: 1.10rem;
+    font-weight: 600;
+    color: var(--secondary);
+    background-color: var(--primary);
+    border: 2px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .4s ease;
+}
+.mobile-nav .contact-btn a:hover{
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    background: transparent;
+}
+.mobile-nav .contact-btn{
+    margin-top: 2rem;
+}
+.mobile-nav .texta h1{
+    color: var(--pure);
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'poppins-regular';
+    margin-top: 2.50rem;
+}
+.mobile-social-link{
+    display: flex;
+    margin-top: 1rem;
+}
+.mobile-social-link a .fa-facebook-f,
+.mobile-social-link a .fa-linkedin-in,
+.mobile-social-link a .fa-twitter,
+.mobile-social-link a .fa-instagram{
+    color: var(--primary);
+    font-size: 1.20rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: all .4s ease;
+    background: transparent;
+    border-radius: 100%;
+    padding: 0.60rem;
+}
+.mobile-social-link a .fa-facebook-f:hover,
+.mobile-social-link a .fa-linkedin-in:hover,
+.mobile-social-link a .fa-twitter:hover,
+.mobile-social-link a .fa-instagram:hover{
+    color: var(--secondary);
+    background: var(--primary);
+    transform: translateY(-4px);
+}
+.mobile-social-link a{
+    margin-right: 1.10rem;
+}
+/*media qure for navigation bar end*/
+
+
+
+/*media qure for main index file start*/
+@media(max-width: 1440px){
+    .services-links header{
+        height: 28vh;
+    }
+}
+@media(max-width: 1331px){
+    header{
+        height: 51vh;
+    }
+    header nav .links,
+    header nav .logo,
+    header nav .consult{
+        display: block;
+    }
+}
+
+@media(max-width: 1234px){
+    section.amazon-ppc-link .velx .velo{
+        flex-direction: column;
+    }
+    section.amazon-ppc-link .velo .imgz img, section.amazon-ppc-link .velo .imgzz img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    #velo-color{
+        padding: 2rem 2rem;
+    }
+}
+
+@media(max-width: 1188px){
+    header{
+        height: 54vh;
+    }
+    header .header-text h1{
+        font-size: 4rem;
+    }
+    header .header-text h3:nth-last-child(1){
+        font-size: 2.50rem;
+    }
+    section.about-us .wrapper{
+        width: 100%;
+        margin: 0 auto;
+    }
+    section.about-us .box-a,
+    section.about-us .box-b{
+        width: 50%;
+    }
+    section.about-us .box-b{
+        margin-left: 2rem;
+    }
+    section.about-us .box-a img{
+        width: 480px;
+    }
+    section.about-us .box-b p{
+        width: auto;
+        height: 281px;
+        overflow-y: auto;
+    }
+    section.our-services .card-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section.Team4Amz .wrapper .video-card iframe{
+        width: 500px;
+        height: 230px;
+    }
+    section.Team4Amz .wrapper{
+        width: 100%;
+    }
+    section.Team4Amz .wrapper .video-card{
+        width: 50%;
+    }
+    section.Team4Amz .wrapper .card-one{
+        height: 238px;
+        width: 50%;
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 1170px){
+    header nav .logo a img{
+        width: 166px;
+    }
+    header {
+        height: 44vh;
+    }
+    header .header-text h1{
+        margin-top: -64px;
+    }
+    header nav .consult{
+        display: block;
+    }
+}
+
+@media(max-width: 1134px){
+    header {
+        height: 57vh;
+    }
+    header nav .consult{
+        display: none;
+    }
+}
+
+@media(max-width: 1041px){
+    .hamberger{
+        display: block;
+    }
+    header{
+        height: 47vh;
+        padding: 0 0;
+        padding-top: 3rem;
+    }
+    .top-bar{
+        display: none;
+    }
+    section.about-us .box-a,
+    section.about-us .box-b{
+        width: 40%;
+    }
+    section.about-us .box-a img{
+        width: 362px;
+    }
+    section.about-us .box-b p{
+        height: 234px;
+        width: 320px;
+    }
+    section.Team4Amz .wrapper .video-card iframe{
+        width: 400px;
+    }
+    section.contact-link .wrapper .wrap:first-child{
+        margin-right: 2rem;
+    }
+}
+
+@media(max-width: 991px){
+    .container{
+        width: 95%;
+    }
+    header{
+         height: 40.5vh;
+    }
+    header .header-text h1{
+        font-size: 3rem;
+        margin-top: -2rem;
+    }
+    header .header-text h3:nth-last-child(1){
+        margin-top: 12rem;
+    }
+    header .header-text .consult-img img{
+        height: 131px;
+    }
+    header .header-text .consult-img{
+        position: absolute;
+        top: 6rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    section.about-us .box-a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    section.about-us .box-a img{
+        width: 685px;
+    }
+    section.about-us .container .wrapper{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    section.about-us .box-b .text-paragraph{
+        width: 700px;
+        display: flex;
+        align-items: center;
+        overflow-y: hidden;
+        margin-top: 2rem;
+        line-height: 1.70;
+    }
+    section.Team4Amz .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    section.Team4Amz .wrapper .video-card {
+        display: flex;
+        align-items: center;
+        width: 714px;
+    }
+    section.Team4Amz .wrapper .video-card iframe{
+        width: 714px;
+        height: 370px;
+    }
+    section.Team4Amz .wrapper .card-one{
+        height: auto;
+        width: 714px;
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 2rem;
+        line-height: 1.70;
+    }
+    section.our-deal .wrapper .box h1{
+        font-size: 2.50rem;
+    }
+    section.our-deal .wrapper .box h3{
+        font-size: 1.20rem;
+    }
+    footer .container .card-three input, footer .container .card-three textarea{
+        width: 209px;
+    }
+    section.contact-link .wrapper .wrap .second{
+        flex-direction: column;
+    }
+    section.contact-link .wrapper .wrap .third input,
+    section.contact-link .wrapper .wrap .third textarea,
+    section.contact-link .wrapper .wrap .second input{
+        width: 440px;
+    }
+}
+@media (max-width: 899px){
+    header{
+        padding-top: 2rem;
+        height: 50vh;
+    }
+    header nav{
+        flex-direction: column;
+    }
+    header nav .links{
+        margin-top: 2rem;
+    }
+}
+
+@media(max-width: 414px){
+    header nav .links{
+        display: none;
+    }
+    .fbr{
+        display: none;
+    }
+    .fba{
+        display: block;
+    }
+    .top-bar{
+        display: none;
+    }
+    header{
+        height: 31vh;
+    }
+
+    /* all services links stylings start from here */
+
+    header .product-text .red-line{
+        width: 195px;
+        height: 9px;
+        top: -3px;
+    }
+    .services-links{
+        height: 25vh;
+        margin-bottom: 1rem
+    }
+    .services-links header .product-text h1{
+        font-size: 2.10rem;
+        margin-top: 5.10rem;
+    }
+    section.product-link .video iframe, 
+    section.amazon-ppc-link .video iframe, 
+    section.listing-link .video iframe, 
+    section.launching-link .video iframe{
+        width: 100%;
+        height: 193px;
+    }
+    section.product-link, 
+    section.amazon-ppc-link, 
+    section.listing-link, 
+    section.launching-link, 
+    section.product-sourcing-link, 
+    section.account-management-link, 
+    section#back-services, 
+    section.product-link, 
+    section.about-link, 
+    section.contact-link, 
+    section.portfolio-link, 
+    section.case-studies-link{
+        padding: 1.70rem 0;
+    }
+    section.product-link .box-one p, 
+    section.product-link .box-two p, 
+    section.product-link .box-three p, 
+    section.amazon-ppc-link p, 
+    section.amazon-ppc-link .velo p, 
+    section.listing-link .velo p, 
+    section.launching-link .container p, 
+    section.product-sourcing-link p, 
+    section.account-management-link p, 
+    section.case-studies-link .wrap p{
+        line-height: 1.5;
+        word-spacing: 0;
+        letter-spacing: 1.10px;
+    }
+    section.product-link .box-two h2, section.product-link .box-three h2, section.amazon-ppc-link .velo h2, section.listing-link .velo h2, section.product-sourcing-link .velo h2, section.account-management-link .velo h2{
+        margin-top: 2rem;
+    }
+    .tor-line{
+        top: 29px;
+    }
+    .tor-lines{
+        top: 376px;
+    }
+    .heading-linee{
+        top: 328px;
+    }
+    .heading-line{
+        top: 21px;
+    }
+
+    /* all services links stylings END */
+    
+    header .product-text h1{
+        font-size: 2.10rem;
+        padding: 0 2px;
+    }
+    header .header-text h1{
+        font-size: 2.1rem;
+        margin-top: -78px;
+        padding-top: 0;
+    }
+    header .header-text .consult-img img{
+        height: 60px;
+    }
+    header .header-text .consult-img{
+        position: absolute;
+        top: 4.90rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    header .header-text h3{
+        margin-top: -2rem;
+        font-size: 6px;
+    }
+    header .header-text h3:nth-last-child(1){
+        font-size: 1.3rem;
+        margin-top: 5rem;
+    }
+    section.about-us{
+        padding: 0;
+    }
+    .section-heading{
+        font-size: 1.3rem;
+    }
+    .underline{
+        width: 71;
+        top: -8px;
+        position: relative;
+    }
+    .heading-paragraph{
+        font-size: 18px;
+        text-align: justify;
+    }
+    section.about-us .box-a img{
+        width: 287px;
+    }
+    section.about-us .box-b {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    section.about-us .box-b .text-paragraph{
+        width: 310px;
+        height: 276px;
+        text-align: left;
+        line-height: 1.20;
+        font-size: 11px;
+        margin-top: 0;
+    }
+    section.about-us .box-b{
+        margin-left: 0;
+    }
+    section.about-us, section.our-services{
+        margin: 1rem 0;
+    }
+    section.our-services .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section.our-services .card-wrapper .card{
+        width: 287px
+    }
+    section.Team4Amz .wrapper .video-card iframe{
+        width: 350px;
+        height: 200px;
+        margin: 0 auto;
+    }
+    section.Team4Amz .wrapper .card-one{
+        width: 347px;
+        text-align: left;
+        line-height: 1.20;
+        font-size: 11px;
+        overflow-y: hidden;
+        margin-top: 1rem;
+    }
+    section.working .container p{
+        line-height: 1.20;
+        text-align: left;
+        font-size: 11px;
+        margin-top: 1rem;
+    }
+    section.working .container .undo{
+        width: 202px;
+        font-size: 12px;
+        margin-top: 2rem;
+        border-radius: 3px;
+        padding: 0.20rem 0.30rem;
+    }
+    section.working .container .undo .underline{
+        top: 19px;
+        left: 50px;
+    }
+    section.our-deal{
+        padding: 2rem 0;
+        padding-bottom: 0;
+    }
+    section.our-deal .container{
+        padding: 1rem 0;
+    }
+    section.our-deal .wrapper .box h1{
+        font-size: 1.5rem;
+    }
+    section.our-deal .container .wrapper{
+        flex-direction: column;
+    }
+    section.our-deal .container .wrapper .box{
+        margin-bottom: 2rem;
+    }
+    section.clients{
+        padding: 1rem 0;
+    }
+    section.clients .owl-carousel, section.clients{
+        margin-top: 2rem;
+    }
+    section.clients .owl-carousel .item{
+        width: 335px;
+    }
+    section.clients .owl-carousel .item p{
+        font-size: 12px;
+    }
+    section.clients .owl-carousel .item .name, 
+    section.clients .owl-carousel .item .comp-name{
+        font-size: 13px;
+    }
+    section.contact-link .wrapper,
+    section.contact-link .wrapper .wrap .second{
+        flex-direction: column;
+    }
+    section.contact-link .wrapper .wrap .third input,
+    section.contact-link .wrapper .wrap .third textarea{
+        width: 100%;
+    }
+    section.contact-link .wrapper .wrap .second input{
+        width: 100%;
+    }
+    section.contact-link .wrapper .wrap .second div:last-child{
+        margin-top: 1rem;
+    }
+    footer .wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .wrapper .card-one a img{
+        width: 145px;
+    }
+    footer .wrapper .card-one,
+    footer .wrapper .card-two,
+    footer .wrapper .card-three{
+        width: 335px;
+        font-size: 12px;
+        text-align: left;
+    }
+    footer .container .card-one h3, 
+    footer .container .card-two h3, 
+    footer .container .card-three h3{
+        font-size: 1.50rem;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+    }
+    footer .wrapper .card-one p{
+        margin-top: 1rem;
+    }
+    footer .container .card-three{
+        align-items: flex-start ;
+    }
+    .footer{
+        padding: 0.5rem;
+    }
+    .footer .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*media qure for main index file end*/
